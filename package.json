@@ -1,0 +1,20 @@
+{
+  "name": "h2-i7-5gen-calculator",
+  "version": "2.0.0",
+  "description": "first calculator project GIAIC",
+  "main": "index.js",
+  "type": "module",
+  "bin": "/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^9.2.16"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}

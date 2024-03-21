@@ -17,15 +17,15 @@ const answer = await inquirer.prompt([
     {
         name: "operator",
         type: "list",
-        message:(
+        message: (
             "Select one of the operator to perfom action"
         ),
         choices: [
             chalk.blue.bold.blueBright("Addition"),
             chalk.red.bold.redBright("Subtraction"),
-            chalk.green.bold.greenBright("Multipilication"),
+            chalk.green.bold.greenBright("Multiplication"),
             chalk.magenta.bold.magentaBright("Divison"),
-            chalk.yellow.bold.yellowBright("Mudules"),
+            chalk.yellow.bold.yellowBright("Mudulus"),
         ],
     },
 ]);
@@ -41,7 +41,7 @@ if (answer.operator === chalk.blue.bold.blueBright("Addition")) {
             `${answer.Num1} - ${answer.Num2} = ${answer.Num1 - answer.Num2}`
         )
     );
-} else if (answer.operator === chalk.green.bold.greenBright("Multipilication")) {
+} else if (answer.operator === chalk.green.bold.greenBright("Multiplication")) {
     console.log(
         chalk.green.bold(
             `${answer.Num1} * ${answer.Num2} = ${answer.Num1 * answer.Num2}`
@@ -53,12 +53,12 @@ if (answer.operator === chalk.blue.bold.blueBright("Addition")) {
             `${answer.Num1} / ${answer.Num2} = ${answer.Num1 / answer.Num2}`
         )
     );
-} else if (answer.operator === chalk.yellow.bold.yellowBright("Mudules")) {
+} else if (answer.operator === chalk.yellow.bold.yellowBright("Modulus")) {
     console.log(
         chalk.yellow.bold(
             `${answer.Num1} % ${answer.Num2} = ${answer.Num1 - answer.Num2}`
         )
     );
 } else {
-    console.log(chalk.red.strikethrough("Inivild Try Again"));
+    console.log(chalk.red.strikethrough("Please select a valid Operator"));
 }

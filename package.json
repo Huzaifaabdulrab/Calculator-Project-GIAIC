@@ -1,6 +1,6 @@
 {
   "name": "h2-i7-5gen-calculator",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "first calculator project GIAIC",
   "main": "index.js",
   "type": "module",

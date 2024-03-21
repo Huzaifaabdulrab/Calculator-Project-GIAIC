@@ -25,7 +25,7 @@ const answer = await inquirer.prompt([
             chalk.red.bold.redBright("Subtraction"),
             chalk.green.bold.greenBright("Multiplication"),
             chalk.magenta.bold.magentaBright("Divison"),
-            chalk.yellow.bold.yellowBright("Mudulus"),
+            chalk.yellow.bold.yellowBright("Modulus"),
         ],
     },
 ]);
